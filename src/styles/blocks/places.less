@@ -1,0 +1,36 @@
+.places{
+    &__place{
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        min-width: 192px;
+        margin-bottom: 13px;
+        justify-content: end;
+        &::before,
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+        &::before{
+            border: 1px solid @black;
+            margin-right: 33px;
+        }
+        &::after{
+            border: 1px solid @red;
+            left: 14px;
+            position: absolute;
+        }
+    }
+    &__place--disable{
+        &::before{
+            opacity: 0;
+        }
+        &::after{
+            border-color: #BFBFBF;
+            background: #BFBFBF;
+        }
+    }
+}

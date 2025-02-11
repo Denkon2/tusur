@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"><!--  class="show-event-popup" -->
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,7 @@
 </head>
 
 <body class="body">
+
   <header class="page-header">
     <div class="page-header__container">
       <a href="./index.html" class="page-header__logo">
@@ -34,119 +35,52 @@
   </header><!-- header -->
 
   <main class="main">
-    <div class="home">
-      <div class="events">
-        <section class="listing events__listing">
-          <h2 class="listing__title section-title">Мероприятия</h2>
-          <div class="listing__events-list">
-            <!-- prettier-ignore -->
-            <article class="event-card  listing__event-card">
-              <a href="#" class="event-card__link">
-                <picture class="event-card__picture">
-                  <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
-                </picture>
-                <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
-                <p class="event-card__description">Это третий альбом группы...</p>
-                <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
-              </a>
-            </article>
-            <article class="event-card  listing__event-card">
-              <a href="#" class="event-card__link">
-                <picture class="event-card__picture">
-                  <img src="assets/images/events/HowStuffWorks.jpg" alt="stuff" class="event-card__img" />
-                </picture>
-                <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
-                <p class="event-card__description">Один из самых популярных подкастов в мире...</p>
-                <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
-              </a>
-            </article>
-            <article class="event-card  listing__event-card">
-              <a href="#" class="event-card__link">
-                <picture class="event-card__picture">
-                  <img src="assets/images/events/Sade.jpg" alt="Sade" class="event-card__img" />
-                </picture>
-                <h4 class="event-card__title">Вечер | The Best of Sade</h4>
-                <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
-                <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
-              </a>
-            </article>
-          </div>
-          <!-- Кнопка "Показать все" -->
-        </section>
-        <!-- Остальная разметка -->
-      </div>
-      <!-- end events -->
 
-      <!-- prettier-ignore -->
-      <section class="listing home__listing">
-        <h2 class="listing__title section-title">Блог</h2>
-        <div class="listing__article-list">
-          <!-- prettier-ignore -->
-          <article class="article-card listing__article-card">
-            <a href="#" class="article-card__link">
-              <picture class="article-card__picture">
-                <img src="assets/images/blog/bl-1.jpeg" alt="Theatre Photosession" class="article-card__img" />
-              </picture>
-            </a>
-            <div class="article-card__info">
-              <time datetime="2021-11-26T00:00" class="article-card__time">26.11.2021</time>
-              <a href="#" class="article-card__title-link">
-                <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
-                <span class="article-card__arrow">
-                  <svg class="article-card__arrow-icon" width="91" height="60">
-                    <use xlink:href="assets/icons/symbols.svg#link"></use>
-                  </svg>
-                </span>
-              </a>
-              <p class="article-card__description">Организовывая фотосессию для...</p>
-            </div>
-          </article>
-          <article class="article-card listing__article-card">
-            <a href="#" class="article-card__link">
-              <picture class="article-card__picture">
-                <img src="assets/images/blog/bl-2.jpeg" alt="Выставка VR в Томске" class="article-card__img" />
-              </picture>
-            </a>
-            <div class="article-card__info">
-              <time datetime="2021-11-05T00:00" class="article-card__time">05.11.2024</time>
-              <a href="#" class="article-card__title-link">
-                <h4 class="article-card__title">Выставка VR в Томске</h4>
-                <span class="article-card__arrow">
-                  <svg class="article-card__arrow-icon" width="91" height="60">
-                    <use xlink:href="assets/icons/symbols.svg#link"></use>
-                  </svg>
-                </span>
-              </a>
-              <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
-            </div>
-          </article>
-          <article class="article-card listing__article-card">
-            <a href="#" class="article-card__link">
-              <picture class="article-card__picture">
-                <img src="assets/images/blog/bl-3.jpeg" alt="Rocking radio в заброшенном ангаре" class="article-card__img" />
-              </picture>
-            </a>
-            <div class="article-card__info">
-              <time datetime="2021-11-05T00:00" class="article-card__time">05.11.2024</time>
-              <a href="#" class="article-card__title-link">
-                <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
-                <span class="article-card__arrow">
-                  <svg class="article-card__arrow-icon" width="91" height="60">
-                    <use xlink:href="assets/icons/symbols.svg#link"></use>
-                  </svg>
-                </span>
-              </a>
-              <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
-            </div>
-          </article>
-
+    <div class="page">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container page-container">
+          <a href="./index.html" class="breadcrumbs__link">Главная</a>
+          <span class="breadcrumbs__separator"> /</span>
+          <a href="#" class="breadcrumbs__link">Мероприятия</a>
+          <span class="breadcrumbs__separator"> /</span>
+          <span class="breadcrumbs__current">Вечер | The Best of Sade</span>
         </div>
-        <a href="#" class="listing__link link">Смотреть все</a>
-      </section>
+      </div>
 
+      <article class="article">
+        <div class="article__container container">
+          <h1 class="article__title title">Заголовок страницы</h1>
+          <div class="article__content content">
+            <h1>Заголовок h1</h1>
+            <h2>Заголовок h2</h2>
+            <h4>Заголовок h4</h4>
+            <h4>Заголовок h4</h4>
+            <h5>Заголовок h5</h5>
+            <h6>Заголовок h6</h6>
+
+            <p>
+              Абзац текста, содержащий <b>жирный</b> текст и <a href="https://tagree.ru/" target="_blank">ссылку</a>.
+            </p>
+            <ul>
+              <li>Элемент списка 1</li>
+              <li>Элемент списка 2</li>
+              <li>Элемент списка 3</li>
+            </ul>
+            <ol>
+              <li>Элемент списка 1</li>
+              <li>Элемент списка 2</li>
+              <li>Элемент списка 3</li>
+            </ol>
+            <blockquote>
+              Здесь содержится цитата
+            </blockquote>
+            <img src="assets/images/image.jpg" alt="Подпись картинки">
+          </div>
+        </div>
+      </article>
     </div>
-  </main>
-  <!-- main -->
+
+  </main><!-- main -->
 
   <footer class="page-footer">
     <div class="container">

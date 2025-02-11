@@ -1,39 +1,115 @@
-html,body {
-    width: 100%; 
-    margin: 0;
-    padding: 0;
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: @gray;
+  background-image: url(../assets/images/noise.png),
+    url(../assets/images/bg.png);
+  background-position: 0 0, 0 0;
+  background-size: auto, 100% auto;
+  background-repeat: repeat, repeat-y;
+  color: @black;
+  font-family: @font1;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.375;
+  overflow-x: hidden;
+  padding-top: 147px;
+}
+.main {
+  flex: 1 0 auto;
+}
+.page-footer {
+  flex: 0 0 auto;
+}
+a {
+  color: @black;
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.home {
+  padding: 100px 0;
+
+  &__listing {
+    margin-bottom: 95px;
   }
-  body {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: @gray;
-    background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
-    background-position: 0 0, 0 0;
-    background-size: auto, 100% auto;
-    background-repeat: repeat, repeat-y;
-    color: @black;
-    font-family: @font1;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.375;
-    overflow-x: hidden;
-    padding-top: 147px;
+}
+.page{
+  padding-top: 40px;
+}
+
+input,
+textarea,
+select {
+  box-shadow: none;
+  outline: none;
+  color: @black;
+  font-family: @font1;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  &::placeholder {
+    color: #6C6C6C;
   }
-  .main {
-    flex: 1 0 auto;
+}
+input:focus,
+textarea:focus {
+  &::placeholder {
+    color: transparent
   }
-  .page-footer {
-    flex: 0 0 auto;
+}
+
+.title {
+  margin: 0 0 80px;
+  font-family: @font2;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.article {
+  padding: 40px 0 150px;
+  
+  &__container {
+    .container;
   }
-  a {
-    color: @black;
-    outline: none;
+  &__content {
+    max-width: 830px;
   }
-  img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+}
+
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.text-align-center{
+  text-align: center;
+}
+.page-container, .container{
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}

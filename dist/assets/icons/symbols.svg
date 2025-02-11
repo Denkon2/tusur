@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="logo" viewBox="0 0 202 147"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="close" viewBox="0 0 60 60"><g fill="none">
+    <circle cx="30" cy="30" r="30" fill="#1F1E1E"/>
+    <path d="M36 24 24 36M24 24l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="link" viewBox="0 0 92 62"><g fill="none">
+    <path d="M40 52.213a29.836 29.836 0 0 0 15.297 8.21 29.76 29.76 0 0 0 17.26-1.707 29.902 29.902 0 0 0 13.408-11.049A30.089 30.089 0 0 0 91 31a30.089 30.089 0 0 0-5.035-16.667 29.902 29.902 0 0 0-13.407-11.05 29.76 29.76 0 0 0-17.262-1.707A29.837 29.837 0 0 0 40 9.786" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round"/>
+    <path d="M5 31h60M58 24l7 7-7 7" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="logo" viewBox="0 0 202 147"><g fill="none">
     <path fill="#1F1E1E" d="M0 0h147v147H0z"/>
     <path d="M39.96 72.43H26.63v-22.4h-.03v-.04h-4.69V73h18.05v-.57Zm3.97.57h18.11v-.57H48.61V61.28h10.5v-.59h-10.5V50.56h13.43v-.57H43.93V73Zm26.76-22.44V73h-4.68V49.99h4.68c6.47 0 10.96 4.19 12.38 10.33V49.99h4.69V73h-4.69v-8.55c-.66-12.81-9.5-13.89-12.38-13.89ZM97.38 73V50.56c2.88 0 11.72 1.08 12.38 13.89V73h4.69V49.99h-4.69v10.33c-1.42-6.14-5.91-10.33-12.38-10.33H92.7V73h4.68Zm26.69 0h-4.68V49.99h4.68V73Z" fill="#FFF" fill-rule="evenodd"/>
     <path fill="#BC3324" d="M81 92h121v42H81z"/>
