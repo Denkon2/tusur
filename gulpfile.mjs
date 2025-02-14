@@ -97,6 +97,7 @@ function jsCopy() {
 function copy() {
   return gulp
     .src(resources.static, {
+      encoding: false,
       base: "src"
     })
     .pipe(gulp.dest("dist/"));

@@ -1,0 +1,56 @@
+.art {
+  font-family: @font2;
+  &__title {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+  &__subtitle {
+    margin: 70px auto 100px;
+    max-width: 990px;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__banner {
+    height: 325px;
+    position: relative;
+    @media @bw1340 {
+      height: 257px;
+    }
+    &-icon {
+      width: 1920px;
+      height: 325px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+    @media @bw1340 {
+      &-icon {
+        width: 1366px;
+        height: 257px;
+      }
+    }
+  }
+  &__btns {
+    max-width: 624px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-title {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 45px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="show-event-popup"><!--  class="show-event-popup" -->
+<html lang="ru"><!--  class="show-event-popup" -->
 @@include('blocks/head.html')
 
 <body class="body">
@@ -7,6 +7,12 @@
 
   <main class="main">
     <div class="home">
+      <div class="art-home">
+        @@include('blocks/art.html')
+      </div>
+      <div class="about-home">
+        <div class="container">@@include('blocks/about.html')</div>
+      </div>
       <div class="events">
         <section class="listing events__listing">
           <h2 class="listing__title section-title">Мероприятия</h2>
@@ -58,7 +64,7 @@
   @@include('blocks/page-footer.html')
 
   @@include('blocks/event-pp.html')
-
+<script defer src="scripts/main.js"></script>
 </body>
 
 </html>
