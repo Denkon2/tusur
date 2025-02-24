@@ -3,6 +3,9 @@
     display: flex;
     width: 100%;
     position: relative;
+    @media @bw768{
+      flex-wrap: wrap;
+    }
     & + .article-card {
       margin-top: 120px;
       &::before {
@@ -35,6 +38,9 @@
       margin-right: 60px;
       font-size: 0;
       text-decoration: none;
+      @media @bw768{
+        width: 100%;
+      }
       &:hover {
         & + .article-card__info {
           .article-card__title-link {

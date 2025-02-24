@@ -11,7 +11,7 @@
 
         <div class="page">
             @@include('blocks/breadcrumbs.html')
-            <article class="event">
+            <section class="event">
                 <!-- Здесь пропущенное содержимое страницы -->
                 <div class="event__container">
 
@@ -20,6 +20,7 @@
                             <h1 class="article__title title">Вечер | The Best of Sade</h1>
                             <div class="event__top">
                                 <div class="event__columns justify-center items-center">
+                                    <div class="event__br"></div>
                                     <div class="event__data">
                                         <div class="event__data--left event__data--col">
                                             <time datetime="16-12-2022" class="event__time">16/12/2022</time>
@@ -27,8 +28,12 @@
                                         </div>
                                     </div>
                                     <picture class="event__picture">
-                                        <img class="event__picture--img" src="./assets/images/event/detail.jpg"
-                                            alt="Вечер | The Best of Sade">
+                                        <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/event/detail-768.webp" />
+                                        <source media="(max-width: 450px)" srcset="assets/images/event/detail-768.jpg" />
+                                        <source media="(max-width: 1366px)" type="image/webp" srcset="assets/images/event/detail-1340.webp" />
+                                        <source media="(max-width: 1366px)" srcset="assets/images/event/detail-1340.jpg" />
+                                        <source type="image/webp" srcset="assets/images/event/detail.webp" />
+                                        <img class="event__picture--img" src="assets/images/event/detail.jpg" alt="Вечер | The Best of Sade">
                                     </picture>
                                     <div class="event__data">
                                         <div class="event__data--right event__data--col">
@@ -378,7 +383,7 @@
                     </article>
 
                 </div>
-            </article>
+            </section>
         </div>
 
     </main><!-- main -->

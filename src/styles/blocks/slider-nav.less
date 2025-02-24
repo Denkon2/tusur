@@ -1,0 +1,41 @@
+.slider-nav {
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__dots{
+
+  }
+  &__dot{
+    display: inline-block;
+    width: 15px;
+    height: 2px;
+    border-radius: 2px;
+    background: rgb(191, 191, 191);
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    &:hover, &.active{
+        background: rgb(31, 30, 30);
+    }
+  }
+  &__prev,&__next{
+    position: relative;
+    display: inline-block;
+    width: 91px;
+    height: 60px;
+  }
+  &__prev{
+    transform: rotate(180deg);
+  }
+  &__icon{
+    width: 100%;
+    height: 100%;
+  }
+}

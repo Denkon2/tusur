@@ -47,7 +47,7 @@ img {
 }
 
 .home {
-  padding: 100px 0;
+  padding: 100px 0 43px;
 
   &__listing {
     margin-bottom: 95px;
@@ -112,11 +112,26 @@ textarea:focus {
 .items-center{
   align-items: center;
 }
+
 .justify-center{
   justify-content: center;
 }
+.justify-between{
+  justify-content: space-between;
+}
+
 .text-align-center{
   text-align: center;
+}
+.text-align-left{
+  text-align: left;
+}
+.text-align-right{
+  text-align: right;
+}
+.display-flex{
+  display: flex;
+  flex-wrap: wrap;
 }
 .page-container, .container{
   width: 100%;
@@ -126,4 +141,8 @@ textarea:focus {
   padding-left: 40px;
   padding-right: 40px;
   box-sizing: border-box;
+  @media @bw768{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

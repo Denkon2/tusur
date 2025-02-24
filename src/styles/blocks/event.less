@@ -2,7 +2,7 @@
   padding: 0 0 150px;
   &__container {
   }
-  &__content{
+  &__content {
     padding-top: 78px;
   }
   &__columns,
@@ -12,6 +12,16 @@
   }
   &__columns {
     position: relative;
+    @media @bw768 {
+      justify-content: center;
+    }
+  }
+  &__br {
+    display: none;
+    width: 100%;
+    @media @bw768 {
+      display: block;
+    }
   }
   &__data {
     justify-content: space-between;
@@ -25,12 +35,50 @@
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    position: relative;
+    @media @bw768 {
+      width: 100%;
+      max-width: 50%;
+    }
   }
-  &__data--left{
-    padding-right: 58px;
+  &__data--left, &__data--right{
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 139px;
+      height: 1px;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
   }
-  &__data--right{
-    padding-left: 58px;
+  &__data--left {
+    margin-right: 58px;
+
+    &::after, &::before{
+      background: linear-gradient(
+        270deg,
+        rgb(28, 27, 27),
+        rgba(255, 255, 255, 0) 82.857%
+      );
+      right: 0;
+    }
+  }
+  &__data--right {
+    margin-left: 58px;
+
+    &::after, &::before{
+      background: linear-gradient(-270.00deg, rgb(28, 27, 27),rgba(255, 255, 255, 0) 82.857%);
+      left: 0;
+    }
   }
   &__time {
     font-weight: 300;
@@ -46,6 +94,17 @@
     font-size: 0;
     text-decoration: none;
     overflow: hidden;
+    @media @bw1340 {
+      max-width: 426px;
+    }
+    @media @bw1020 {
+      max-width: 245px;
+    }
+    @media @bw768 {
+      order: -1;
+      margin-left: auto;
+      margin-right: auto;
+    }
     &::after {
       content: "";
       display: block;
