@@ -7,14 +7,47 @@
   padding-bottom: 20px;
   overflow: hidden;
   position: relative;
+  @media @bw1660 {
+    font-size: 90px;
+    padding-top: 11px;
+    padding-bottom: 58px;
+  }
+    @media @bw880 {
+      font-size: 80px;
+      line-height: 1.4;
+      padding-top: 4px;
+      padding-bottom: 50px;
+    }
   &__slogan {
     white-space: nowrap;
     text-align: right;
+    @media @bw880 {
+      white-space: normal;
+    }
     &:nth-child(1) {
       margin-left: -60px;
+      @media @bw1660 {
+        margin-left: -39px;
+      }
+      @media @bw880 {
+        text-align: left;
+        margin-left: -25px;
+        span{
+          left: 35%;
+          display: inline-block;
+          position: relative;
+        }
+      }
     }
     &:nth-child(2) {
       margin-right: -198px;
+      @media @bw1660 {
+        margin-right: -141px;
+      }
+      @media @bw880 {
+        margin-right: -20px;
+        white-space: nowrap;
+      }
     }
   }
 }

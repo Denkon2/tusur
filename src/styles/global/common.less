@@ -48,6 +48,12 @@ img {
 
 .home {
   padding: 100px 0 43px;
+  @media @bw1660{
+    padding-top: 95px;
+  }
+  @media @bw1020{
+    padding-top: 70px;
+  }
 
   &__listing {
     margin-bottom: 95px;
@@ -105,10 +111,6 @@ textarea:focus {
   }
 }
 
-.about-home{
-  padding-top: 100px;
-}
-
 .items-center{
   align-items: center;
 }
@@ -141,6 +143,10 @@ textarea:focus {
   padding-left: 40px;
   padding-right: 40px;
   box-sizing: border-box;
+  @media @bw1020{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   @media @bw768{
     padding-left: 20px;
     padding-right: 20px;

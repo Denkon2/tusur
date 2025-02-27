@@ -1,5 +1,8 @@
 .contacts {
   padding-bottom: 120px;
+  @media @bw1020{
+    padding-bottom: 95px;
+  }
   &__body {
     display: flex;
     flex-wrap: wrap;
@@ -9,11 +12,26 @@
   &__info {
     width: 100%;
     max-width: 470px;
+    @media @bw1020{
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      padding-top: 78px;
+    }
     &-item {
       align-items: center;
       width: 100%;
+      @media @bw1020{
+        width: auto;
+        justify-content: center;
+        align-items: start;
+      }
       & ~ .contacts__info-item{
         margin-top: 67px;
+        @media @bw1020{
+          margin-top: 0;
+        }
       }
     }
     &-icon {
@@ -23,12 +41,21 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media @bw1020{
+        margin-bottom: 31px;
+        width: 114px;
+      }
     }
     &-text {
         padding-left: 58px;
         box-sizing: border-box;
         width: calc(100% - 110px);
         font-style: normal;
+        @media @bw1020{
+          width: 100%;
+          padding-left: 0;
+          text-align: center;
+        }
     }
     &-string{
         display: block;
@@ -43,11 +70,20 @@
         margin-bottom: 4px;
         font-size: 20px;
         font-weight: 600;
+        @media @bw1020{
+          font-size: 18px;
+          margin-bottom: 9px;
+        }
     }
   }
   &__map {
     max-width: 752px;
     position: relative;
+    @media @bw1020{
+      max-width: 100%;
+      order: -1;
+      margin-bottom: 20px;
+    }
     &-baloon{
       position: absolute;
       top: 50%;

@@ -2,8 +2,9 @@
   padding-top: 100px;
   padding-bottom: 100px;
   font-size: 18px;
-  @media @bw768{
+  @media @bw1020{
     font-size: 16px;
+    padding-bottom: 31px;
   }
   &__body {
     display: grid;
@@ -14,13 +15,16 @@
       "description2 description2"
       "description3 description3";
     padding-bottom: 32px;
-    @media @bw768{
+    @media @bw1340{
       grid-template-columns: calc(100% - 262px) 262px;
       grid-template-areas:
       "description description"
       "image1 image1"
       "description2 image2"
       "description3 description3";
+    }
+    @media @bw880{
+      padding-bottom: 57px;
     }
   }
   &__article {
@@ -29,16 +33,30 @@
     &:nth-child(1) {
       grid-area: description;
       padding-bottom: 102px;
+      @media @bw1020{
+        padding-bottom: 80px;
+      }
     }
     &:nth-child(4) {
       grid-area: description2;
       margin-top: -104px;
       padding-bottom: 64px;
-      @media @bw768{
+      @media @bw1660{
+        padding-bottom: 38px;
+        .about__desctiption--text{
+          padding-top: 48px;
+        }
+      }
+      @media @bw1020{
         margin-top: 0;
         padding-right: 25px;
+        padding-top: 34px;
+        .about__desctiption--title{
+          margin-bottom: 20px;
+        }
         .about__desctiption--text{
           max-width: 348px;
+          padding-top: 10px;
         }
       }
     }
@@ -46,6 +64,10 @@
       grid-area: description3;
       padding-top: 69px;
       padding-left: 49px;
+      @media @bw1660{
+        padding-left: 37px;
+      }
+
     }
     &--title {
       font-size: 44px;
@@ -54,7 +76,7 @@
       max-width: 868px;
       margin-top: 0;
       margin-bottom: 51px;
-      @media @bw768{
+      @media @bw1020{
         font-size: 26px;
       }
     }
@@ -63,13 +85,25 @@
       margin-left: auto;
       margin-top: 0;
       margin-bottom: 0;
+      @media @bw1660{
+        max-width: 827px;
+      }
+      @media @bw880{
+        max-width: 637px;
+      }
     }
   }
   &__image-1 {
     grid-area: image1;
     padding-bottom: 204px;
-    @media @bw768{
+    @media @bw1660{
+      max-width: 97%;
+    }
+    @media @bw1020{
+      max-width: 100%;
       padding-bottom: 50px;
+    }
+    @media @bw768{
     }
   }
   &__image-2 {
@@ -77,8 +111,14 @@
     margin-left: auto;
     margin-top: auto;
     width: 404px;
-    @media @bw768{
+    @media @bw1660{
+      max-width: 97%;
+    }
+    @media @bw1020{
       max-width: 100%;
+      margin-top: 0;
+    }
+    @media @bw768{
     }
   }
   &__img {
@@ -86,8 +126,18 @@
     margin: 0;
   }
   &__desctiption:nth-child(5) {
+    @media @bw1020{
+      padding-left: 30px;
+      padding-right: 7px;
+    }
     .about__image {
       position: relative;
+      @media @bw1660{
+        max-width: 67.4%;
+      }
+      @media @bw1020{
+        max-width: 100%;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -96,10 +146,19 @@
         right: -8px;
         height: 70%;
         background-color: @red;
+        @media @bw1660{
+          left: -37px;
+          top: -18px;
+          right: -7px;
+          height: 68%;
+        }
+        @media @bw1020{
+          left: -30px;
+          top: -14px;
+        }
         @media @bw768{
           left: -29px;
           top: -14px;
-          right: -7px;
         }
       }
       img {
@@ -114,18 +173,24 @@
       margin-left: auto;
       margin-top: 0;
       margin-bottom: 0;
-      @media @bw768{
+      @media @bw1660{
+        max-width: 351px;
+      }
+      @media @bw1020{
         justify-content: space-between;
         margin-left: -29px;
         max-width: 100%;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 47px;
       }
       p {
         margin-top: auto;
         margin-bottom: 0;
         padding-top: 44px;
-        @media @bw768{
+        @media @bw1660{
+          padding-top: 33px;
+        }
+        @media @bw1020{
           max-width: 280px;
         }
       }
@@ -139,8 +204,9 @@
       margin-top: auto;
       margin-bottom: 0;
       transition: color 0.2s;
-      @media @bw768{
+      @media @bw1020{
         max-width: 262px;
+        margin-right: -39px;
         .about__desctiption-icon{
           width: 67px;
           height: 40px;
@@ -150,5 +216,12 @@
         color: red;
       }
     }
+  }
+}
+
+.about-home{
+  padding-top: 100px;
+  @media @bw1020{
+    padding-top: 30px;
   }
 }
