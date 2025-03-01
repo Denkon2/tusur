@@ -3,26 +3,6 @@
   width: 405px;
   max-width: 100%;
   min-width: 280px;
-  @media @bw1660 {
-    width: calc(33.3333% - 40px);
-    margin: 0 20px 100px;
-  }
-  @media @bw1340 {
-    width: calc(33.3333% - 30px);
-    margin: 0 15px 100px;
-  }
-  @media @bw1020 {
-    width: calc(50% - 30px);
-    max-width: 405px;
-    margin: 0 15px 85px;
-  }
-  @media @bw768 {
-    margin: 0 10px 80px;
-  }
-  @media @bw650 {
-    width: 100%;
-    margin: 0 0 60px;
-  }
   &__link {
     display: flex;
     flex-direction: column;
@@ -42,24 +22,12 @@
     font-size: 0;
     text-decoration: none;
     overflow: hidden;
-    @media @bw1660 {
-      margin-bottom: 22px;
-    }
-    @media @bw880 {
-      margin-bottom: 20px;
-    }
     
     &::after {
       content: "";
       display: block;
       width: 100%;
       padding-top: 107.16%;
-      @media @bw1660 {
-        padding-top: 110.16%;
-      }
-      @media @bw880 {
-        padding-top: 107.16%;
-      }
     }
   }
   &__img {
@@ -81,18 +49,17 @@
     text-decoration: underline transparent;
     transition: color 0.2s, text-decoration-color 0.2s;
     @media @bw1660 {
-      margin: 0 0 6px;
+      margin: 0 0 10px;
     }
     @media @bw1340 {
       min-height: 54px;
       font-size: 20px;
       line-height: 27px;
     }
-    @media @bw880 {
+    @media @bw768 {
       min-height: 44px;
       font-size: 16px;
       line-height: 22px;
-      margin-bottom: 14px;
     }
   }
   &__description {
@@ -109,12 +76,29 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
-    @media @bw1660 {
-      margin-top: 12px;
-    }
   }
 }
 .listing__event-card {
   width: calc(33.3333% - 60px);
   margin: 0 30px 120px;
+  @media @bw1660 {
+    width: calc(33.3333% - 40px);
+    margin: 0 20px 100px;
+  }
+  @media @bw1340 {
+    width: calc(33.3333% - 30px);
+    margin: 0 15px 100px;
+  }
+  @media @bw1020 {
+    width: calc(50% - 30px);
+    max-width: 405px;
+    margin: 0 15px 80px;
+  }
+  @media @bw768 {
+    margin: 0 10px 80px;
+  }
+  @media @bw650 {
+    width: 100%;
+    margin: 0 0 60px;
+  }
 }

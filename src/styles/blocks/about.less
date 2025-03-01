@@ -2,7 +2,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
   font-size: 18px;
-  @media @bw1020{
+  @media @bw1020 {
     font-size: 16px;
     padding-bottom: 31px;
   }
@@ -15,16 +15,13 @@
       "description2 description2"
       "description3 description3";
     padding-bottom: 32px;
-    @media @bw1340{
+    @media @bw1340 {
       grid-template-columns: calc(100% - 262px) 262px;
       grid-template-areas:
-      "description description"
-      "image1 image1"
-      "description2 image2"
-      "description3 description3";
-    }
-    @media @bw880{
-      padding-bottom: 57px;
+        "description description"
+        "image1 image1"
+        "description2 image2"
+        "description3 description3";
     }
   }
   &__article {
@@ -33,41 +30,61 @@
     &:nth-child(1) {
       grid-area: description;
       padding-bottom: 102px;
-      @media @bw1020{
-        padding-bottom: 80px;
-      }
     }
     &:nth-child(4) {
       grid-area: description2;
       margin-top: -104px;
       padding-bottom: 64px;
-      @media @bw1660{
-        padding-bottom: 38px;
-        .about__desctiption--text{
-          padding-top: 48px;
-        }
-      }
-      @media @bw1020{
+      @media @bw1340{
+        max-width: 90%;
         margin-top: 0;
-        padding-right: 25px;
-        padding-top: 34px;
-        .about__desctiption--title{
-          margin-bottom: 20px;
-        }
-        .about__desctiption--text{
-          max-width: 348px;
-          padding-top: 10px;
-        }
       }
     }
     &:nth-child(5) {
       grid-area: description3;
       padding-top: 69px;
       padding-left: 49px;
-      @media @bw1660{
-        padding-left: 37px;
+      @media @bw1340{
+        padding-left: 29px;
+        padding-right: 7px;
       }
-
+      .about__image {
+        width: 68%;
+        @media @bw1340{
+          width: 100%;
+          img{
+            width: 100%;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: -48px;
+          top: -18px;
+          right: -8px;
+          height: 68%;
+          background-color: @red;
+          z-index: -1;
+          @media @bw1340{
+            left: -29px;
+            right: -7px;
+          }
+        }
+      }
+      .about__desctiption--text {
+        max-width: 344px;
+        @media @bw1340{
+          max-width: 100%;
+          width: 100%;
+        }
+        & p {
+          margin-top: auto;
+          padding-top: 61px;
+          @media @bw1340{
+            max-width: 310px;
+          }
+        }
+      }
     }
     &--title {
       font-size: 44px;
@@ -76,8 +93,9 @@
       max-width: 868px;
       margin-top: 0;
       margin-bottom: 51px;
-      @media @bw1020{
-        font-size: 26px;
+      @media @bw1340{
+        font-size: 36px;
+        width: 100%;
       }
     }
     &--text {
@@ -85,143 +103,56 @@
       margin-left: auto;
       margin-top: 0;
       margin-bottom: 0;
-      @media @bw1660{
+      @media @bw1660 {
         max-width: 827px;
       }
-      @media @bw880{
+      @media @bw1340{
         max-width: 637px;
       }
     }
+    &-link {
+      margin-top: auto;
+      margin-bottom: 0;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      text-decoration: none;
+      @media @bw1340{
+        max-width: 262px;
+        margin-left: auto;
+      }
+    }
+  }
+  &__image {
+    position: relative;
   }
   &__image-1 {
     grid-area: image1;
     padding-bottom: 204px;
-    @media @bw1660{
-      max-width: 97%;
-    }
-    @media @bw1020{
-      max-width: 100%;
-      padding-bottom: 50px;
-    }
-    @media @bw768{
+    width: 94%;
+    @media @bw1340{
+      width: 100%;
+      padding-bottom: 51px;
+      & img{
+        width: 100%;
+      }
     }
   }
   &__image-2 {
     grid-area: image2;
     margin-left: auto;
     margin-top: auto;
-    width: 404px;
-    @media @bw1660{
-      max-width: 97%;
-    }
-    @media @bw1020{
-      max-width: 100%;
-      margin-top: 0;
-    }
-    @media @bw768{
-    }
+    width: 100%;
   }
   &__img {
     display: block;
     margin: 0;
   }
-  &__desctiption:nth-child(5) {
-    @media @bw1020{
-      padding-left: 30px;
-      padding-right: 7px;
-    }
-    .about__image {
-      position: relative;
-      @media @bw1660{
-        max-width: 67.4%;
-      }
-      @media @bw1020{
-        max-width: 100%;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        left: -49px;
-        top: -18px;
-        right: -8px;
-        height: 70%;
-        background-color: @red;
-        @media @bw1660{
-          left: -37px;
-          top: -18px;
-          right: -7px;
-          height: 68%;
-        }
-        @media @bw1020{
-          left: -30px;
-          top: -14px;
-        }
-        @media @bw768{
-          left: -29px;
-          top: -14px;
-        }
-      }
-      img {
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        max-width: 872px;
-      }
-    }
-    .about__desctiption-text {
-      max-width: 344px;
-      margin-left: auto;
-      margin-top: 0;
-      margin-bottom: 0;
-      @media @bw1660{
-        max-width: 351px;
-      }
-      @media @bw1020{
-        justify-content: space-between;
-        margin-left: -29px;
-        max-width: 100%;
-        width: 100%;
-        padding-top: 47px;
-      }
-      p {
-        margin-top: auto;
-        margin-bottom: 0;
-        padding-top: 44px;
-        @media @bw1660{
-          padding-top: 33px;
-        }
-        @media @bw1020{
-          max-width: 280px;
-        }
-      }
-    }
-    
-    .about__desctiption-link{
-      font-weight: 600;
-      align-items: center;
-      justify-content: space-between;
-      text-decoration: none;
-      margin-top: auto;
-      margin-bottom: 0;
-      transition: color 0.2s;
-      @media @bw1020{
-        max-width: 262px;
-        margin-right: -39px;
-        .about__desctiption-icon{
-          width: 67px;
-          height: 40px;
-        }
-      }
-      &:hover {
-        color: red;
-      }
-    }
-  }
 }
 
-.about-home{
+.about-home {
   padding-top: 100px;
-  @media @bw1020{
+  @media @bw1020 {
     padding-top: 30px;
   }
 }

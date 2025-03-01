@@ -1,6 +1,6 @@
 .contacts {
   padding-bottom: 120px;
-  @media @bw1020{
+  @media @bw1340{
     padding-bottom: 95px;
   }
   &__body {
@@ -12,25 +12,34 @@
   &__info {
     width: 100%;
     max-width: 470px;
-    @media @bw1020{
+    @media @bw1340{
       max-width: 100%;
       display: flex;
-      flex-wrap: wrap;
       flex-wrap: nowrap;
       padding-top: 78px;
+      justify-content: space-between;
+    }
+    @media @bw768{
+      flex-wrap: wrap;
     }
     &-item {
       align-items: center;
       width: 100%;
-      @media @bw1020{
+      @media @bw1340{
         width: auto;
         justify-content: center;
         align-items: start;
       }
+      @media @bw768{
+        width: 100%;
+      }
       & ~ .contacts__info-item{
         margin-top: 67px;
-        @media @bw1020{
+        @media @bw1340{
           margin-top: 0;
+        }
+        @media @bw768{
+          margin-top: 43px;
         }
       }
     }
@@ -41,9 +50,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      @media @bw1020{
+      @media @bw1340{
         margin-bottom: 31px;
         width: 114px;
+      }
+      @media @bw768{
+        width: 65px;
+        height: 65px;
       }
     }
     &-text {
@@ -51,10 +64,15 @@
         box-sizing: border-box;
         width: calc(100% - 110px);
         font-style: normal;
-        @media @bw1020{
+        @media @bw1340{
           width: 100%;
           padding-left: 0;
           text-align: center;
+        }
+        @media @bw768{
+          width: calc(100% - 65px);
+          padding-left: 10px;
+          text-align: left;
         }
     }
     &-string{
@@ -70,7 +88,7 @@
         margin-bottom: 4px;
         font-size: 20px;
         font-weight: 600;
-        @media @bw1020{
+        @media @bw1340{
           font-size: 18px;
           margin-bottom: 9px;
         }
@@ -79,7 +97,7 @@
   &__map {
     max-width: 752px;
     position: relative;
-    @media @bw1020{
+    @media @bw1340{
       max-width: 100%;
       order: -1;
       margin-bottom: 20px;
