@@ -21,6 +21,11 @@
     .container();
     display: flex;
     align-items: center;
+
+    @media @bw650 {
+      padding-left: 0;
+      
+    }
   }
   &__logo {
     flex-shrink: 0;
@@ -63,7 +68,7 @@
         background-color: fade(@gray, 70%);
         backdrop-filter: blur(20px);
       }
-      &.active{
+      &.active {
         transform: translateX(0);
       }
     }
@@ -150,7 +155,7 @@
   }
   &__nav-toggle {
     display: none;
-            
+
     @media @bw1020 {
       display: block;
       position: relative;
@@ -187,7 +192,7 @@
   }
   &__nav-user {
     display: none;
-                
+
     @media @bw1020 {
       display: flex;
       align-items: center;

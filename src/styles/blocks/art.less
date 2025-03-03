@@ -1,4 +1,8 @@
 .art {
+  @media @bw650 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   font-family: @font2;
   &__title {
     font-size: 45px;
@@ -14,6 +18,10 @@
     }
     @media @bw1340 {
       font-size: 30px;
+    }
+    @media @bw650 {
+      font-size: 13px;
+      margin-bottom: 8px;
     }
   }
   &__subtitle {
@@ -35,19 +43,25 @@
       margin-top: 50px;
       margin-bottom: 66px;
     }
+    @media @bw650 {
+      font-size: 13px;
+      margin-top: 28px;
+      margin-bottom: 33px;
+    }
   }
   &__banner {
     height: 325px;
     position: relative;
-    &::after,&::before{
+    &::after,
+    &::before {
       content: "";
       position: absolute;
       top: 0;
       bottom: 0;
       width: 20%;
-      background-color: #1F1E1E;
+      background-color: #1f1e1e;
     }
-    &::after{
+    &::after {
       right: 0;
     }
     @media @bw1660 {
@@ -55,6 +69,11 @@
     }
     @media @bw1340 {
       height: 165px;
+    }
+    @media @bw650 {
+      height: 75px;
+      margin-left: -20px;
+      margin-right: -20px;
     }
     &-icon {
       width: 100%;
@@ -65,6 +84,9 @@
         left: 50%;
         transform: translateX(-50%);
       }
+      @media @bw650 {
+        width: 437.17px;
+      }
     }
   }
   &__btns {
@@ -73,6 +95,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @bw650 {
+      .btn {
+        width: 100%;
+        &:nth-child(2) {
+          order: 3;
+          margin-top: 25px;
+        }
+        &:nth-child(3) {
+          order: 2;
+        }
+      }
+    }
     &-title {
       font-size: 22px;
       font-weight: 400;
@@ -85,6 +119,10 @@
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 37px;
+      }
+      @media @bw650 {
+        font-size: 13px;
+        margin-bottom: 18px;
       }
     }
   }

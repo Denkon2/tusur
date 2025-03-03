@@ -25,12 +25,17 @@
                 </div>
                 <div class="about__desctiption--text display-flex">
                     <p>Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.</p>
-                    <a href="#" class="about__desctiption-link display-flex w-100">
+                    @@include('link-more-icon.html', {
+                        "class": "about__desctiption-link display-flex w-100",
+                        "svg_class": "about__desctiption-icon",
+                        "text": "Смотртеть"
+                    })
+                    <!-- <a href="#" class="about__desctiption-link display-flex w-100">
                         Смотртеть
                         <svg class="about__desctiption-icon" width="91" height="60">
                             <use xlink:href="assets/icons/symbols.svg#link"></use>
                         </svg>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>

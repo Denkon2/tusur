@@ -6,6 +6,10 @@
     font-size: 16px;
     padding-bottom: 31px;
   }
+  @media @bw650{
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
   &__body {
     display: grid;
     grid-template-columns: calc(100% - 404px) 404px;
@@ -23,6 +27,15 @@
         "description2 image2"
         "description3 description3";
     }
+    @media @bw650{
+      grid-template-columns: auto;
+      grid-template-areas:
+        "description"
+        "image1"
+        "description2"
+        "image2"
+        "description3";
+    }
   }
   &__article {
   }
@@ -30,6 +43,9 @@
     &:nth-child(1) {
       grid-area: description;
       padding-bottom: 102px;
+      @media @bw650{
+        padding-bottom: 61px;
+      }
     }
     &:nth-child(4) {
       grid-area: description2;
@@ -38,6 +54,10 @@
       @media @bw1340{
         max-width: 90%;
         margin-top: 0;
+      }
+      @media @bw650{
+        max-width: 100%;
+        padding-bottom: 54px;
       }
     }
     &:nth-child(5) {
@@ -48,14 +68,22 @@
         padding-left: 29px;
         padding-right: 7px;
       }
+      @media @bw1340{
+        padding-left: 11px;
+        padding-right: 2px;
+      }
+      @media @bw650{
+        padding-top: 55px;
+      }
       .about__image {
         width: 68%;
-        @media @bw1340{
+        @media @bw650{
           width: 100%;
           img{
             width: 100%;
           }
         }
+        
         &::before {
           content: "";
           position: absolute;
@@ -69,6 +97,11 @@
             left: -29px;
             right: -7px;
           }
+          @media @bw650{
+            left: -11px;
+            right: -2px;
+            top: -5px;
+          }
         }
       }
       .about__desctiption--text {
@@ -77,11 +110,20 @@
           max-width: 100%;
           width: 100%;
         }
+        @media @bw650{
+          max-width: none;
+          width: auto;
+          margin-left: -11px;
+          margin-right: -5px;
+        }
         & p {
           margin-top: auto;
           padding-top: 61px;
           @media @bw1340{
             max-width: 310px;
+          }
+          @media @bw650{
+            max-width: 100%;
           }
         }
       }
@@ -96,6 +138,10 @@
       @media @bw1340{
         font-size: 36px;
         width: 100%;
+      }
+      @media @bw650{
+        font-size: 18px;
+        margin-bottom: 30px;
       }
     }
     &--text {
@@ -117,9 +163,15 @@
       align-items: center;
       font-weight: 600;
       text-decoration: none;
+      transition: color 0.2s;
+      
       @media @bw1340{
         max-width: 262px;
         margin-left: auto;
+      }
+      @media @bw650{
+        max-width: 100%;
+        margin-top: 14px;
       }
     }
   }
@@ -137,12 +189,19 @@
         width: 100%;
       }
     }
+    @media @bw650{
+      padding-bottom: 61px;
+    }
   }
   &__image-2 {
     grid-area: image2;
     margin-left: auto;
     margin-top: auto;
     width: 100%;
+    @media @bw650{
+      width: fit-content;
+      max-width: 193px;
+    }
   }
   &__img {
     display: block;
