@@ -557,6 +557,7 @@ svg path {
 .link-more-icon {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+  text-decoration-color: transparent;
 }
 .link-more-icon:hover {
   color: #bc3324;
@@ -752,6 +753,19 @@ svg path {
 }
 .events {
   padding: 140px 0 100px;
+}
+.events__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .events__listing {
   margin-bottom: 69px;
@@ -1745,6 +1759,11 @@ svg path {
 .breadcrumbs__link {
   color: #1F1E1E;
   text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.breadcrumbs__link:hover {
+  color: #bc3324;
 }
 .places__place {
   position: relative;
