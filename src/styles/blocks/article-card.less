@@ -8,6 +8,13 @@
     }
     & + .article-card {
       margin-top: 120px;
+      @media @bw1660 {
+        margin-top: 112px;
+      }
+      @media @bw1340 {
+        margin-top: 60px;
+        padding-top: 10px;
+      }
       &::before {
         content: "";
         display: block;
@@ -21,6 +28,9 @@
         height: 1px;
         background-color: @black;
         pointer-events: none;
+        @media @bw1660 {
+          bottom: 97%;
+        }
       }
     }
     &:hover {
@@ -83,12 +93,18 @@
         padding-bottom: 30px;
         padding: 30px 0;
         padding-right: 150px;
+        @media @bw1340 {
+          padding-top: 25px;
+        }
       }
       &__time {
         margin: 0 0 40px;
         font-weight: 300;
         font-size: 16px;
         line-height: 22px;
+        @media @bw1340 {
+          margin-bottom: 38px;
+        }
       }
       &__title-link,
       &__description {
@@ -102,6 +118,9 @@
         &:hover {
           color: @red;
           text-decoration-color: @red;
+        }
+        @media @bw1340 {
+          margin-bottom: 15px;
         }
       }
       &__title {
@@ -130,6 +149,10 @@
         &-icon{
             width: 100%;
             height: 100%;
+        }
+        @media @bw1340 {
+          width: 67px;
+          height: 40px;
         }
       }
   }

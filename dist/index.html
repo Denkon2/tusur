@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <title>Lenni Art</title>
 
-  <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
-  <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
-  <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+  <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg">
+  <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="./assets/favicons/site.webmanifest">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,8 +76,8 @@
       <div class="about-home">
         <div class="container">
           <section class="about">
+            <h2 class="about__title section-title width_624">О нас</h2>
             <article class="about__article">
-              <h2 class="about__title section-title width_624">О нас</h2>
               <div class="about__body">
                 <div class="about__desctiption display-flex">
                   <h6 class="about__desctiption--title">Проект «Millennials»</h6>
@@ -87,19 +87,23 @@
                     реальность.
                   </p>
                 </div>
-                <picture class="about__image about__image-1">
-                  <img src="assets/images/about/pic.png" class="about__img" alt="img">
-                </picture>
-                <picture class="about__image about__image-2">
-                  <img src="assets/images/about/pic2.png" class="about__img" alt="img">
-                </picture>
-                <div class="about__desctiption display-flex">
+                <div class="about__desctiption about__desctiption-grid display-grid">
+                  <picture class="about__image about__image-1">
+                    <source media="(max-width: 649px)" srcset="assets/images/about/pic-768.png">
+                    <source media="(max-width: 649px)" type="image/webp" srcset="assets/images/about/pic-768.webp">
+                    <source type="image/webp" srcset="assets/images/about/pic.webp">
+                    <img src="assets/images/about/pic.png" class="about__img" alt="img">
+                  </picture>
                   <h6 class="about__desctiption--title">Мы предоставляем площади для вашего мероприятия</h6>
                   <p class="about__desctiption--text">
                     И оказываем помощь с организацией, если вам это нужно.
+                    <br>
                     Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать
                     первые шаги к своей мечте и рассказать всем о том, что их волнует.
                   </p>
+                  <picture class="about__image about__image-2">
+                    <img src="assets/images/about/pic2.png" class="about__img" alt="img">
+                  </picture>
                 </div>
                 <div class="about__desctiption display-flex">
                   <div class="about__image">
@@ -134,12 +138,12 @@
             <article class="event-card  listing__event-card">
               <a href="#" class="event-card__link">
                 <picture class="event-card__picture">
-                  <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/nirvana-768.webp" />
-                  <source media="(max-width: 450px)" srcset="assets/images/events/nirvana-768.jpg" />
-                  <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/nirvana-768.webp" />
-                  <source media="(max-width: 1169px)" srcset="assets/images/events/nirvana-768.jpg" />
-                  <source type="image/webp" srcset="assets/images/events/nirvana.webp" />
-                  <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
+                  <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/nirvana-768.webp">
+                  <source media="(max-width: 450px)" srcset="assets/images/events/nirvana-768.jpg">
+                  <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/nirvana-768.webp">
+                  <source media="(max-width: 1169px)" srcset="assets/images/events/nirvana-768.jpg">
+                  <source type="image/webp" srcset="assets/images/events/nirvana.webp">
+                  <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img">
                 </picture>
                 <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
                 <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
@@ -149,12 +153,12 @@
             <article class="event-card  listing__event-card">
               <a href="#" class="event-card__link">
                 <picture class="event-card__picture">
-                  <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/HowStuffWorks-768.webp" />
-                  <source media="(max-width: 450px)" srcset="assets/images/events/HowStuffWorks-768.jpg" />
-                  <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/HowStuffWorks-768.webp" />
-                  <source media="(max-width: 1169px)" srcset="assets/images/events/HowStuffWorks-768.jpg" />
-                  <source type="image/webp" srcset="assets/images/events/HowStuffWorks.webp" />
-                  <img src="assets/images/events/HowStuffWorks.jpg" alt="stuff" class="event-card__img" />
+                  <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/HowStuffWorks-768.webp">
+                  <source media="(max-width: 450px)" srcset="assets/images/events/HowStuffWorks-768.jpg">
+                  <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/HowStuffWorks-768.webp">
+                  <source media="(max-width: 1169px)" srcset="assets/images/events/HowStuffWorks-768.jpg">
+                  <source type="image/webp" srcset="assets/images/events/HowStuffWorks.webp">
+                  <img src="assets/images/events/HowStuffWorks.jpg" alt="stuff" class="event-card__img">
                 </picture>
                 <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
                 <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи: от игрушек до водяных дамб.</p>
@@ -164,12 +168,12 @@
             <article class="event-card  listing__event-card">
               <a href="#" class="event-card__link">
                 <picture class="event-card__picture">
-                  <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/Sade-768.webp" />
-                  <source media="(max-width: 450px)" srcset="assets/images/events/Sade-768.jpg" />
-                  <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/Sade-768.webp" />
-                  <source media="(max-width: 1169px)" srcset="assets/images/events/Sade-768.jpg" />
-                  <source type="image/webp" srcset="assets/images/events/Sade.webp" />
-                  <img src="assets/images/events/Sade.jpg" alt="Sade" class="event-card__img" />
+                  <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/Sade-768.webp">
+                  <source media="(max-width: 450px)" srcset="assets/images/events/Sade-768.jpg">
+                  <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/Sade-768.webp">
+                  <source media="(max-width: 1169px)" srcset="assets/images/events/Sade-768.jpg">
+                  <source type="image/webp" srcset="assets/images/events/Sade.webp">
+                  <img src="assets/images/events/Sade.jpg" alt="Sade" class="event-card__img">
                 </picture>
                 <h4 class="event-card__title">Вечер | The Best of Sade</h4>
                 <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
@@ -216,12 +220,12 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/bl-1.webp" />
-                <source media="(max-width: 450px)" srcset="assets/images/blog/bl-1.jpeg" />
-                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/bl1-768.webp" />
-                <source media="(max-width: 1169px)" srcset="assets/images/blog/bl1-768.jpg" />
-                <source type="image/webp" srcset="assets/images/blog/bl-1.webp" />
-                <img src="assets/images/blog/bl-1.jpeg" alt="Theatre Photosession" class="article-card__img" />
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/bl-1.webp">
+                <source media="(max-width: 450px)" srcset="assets/images/blog/bl-1.jpeg">
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/bl1-768.webp">
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/bl1-768.jpg">
+                <source type="image/webp" srcset="assets/images/blog/bl-1.webp">
+                <img src="assets/images/blog/bl-1.jpeg" alt="Theatre Photosession" class="article-card__img">
               </picture>
             </a>
             <div class="article-card__info">
@@ -240,12 +244,12 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/bl-2.webp" />
-                <source media="(max-width: 450px)" srcset="assets/images/blog/bl-2.jpeg" />
-                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/bl2-768.webp" />
-                <source media="(max-width: 1169px)" srcset="assets/images/blog/bl2-768.jpg" />
-                <source type="image/webp" srcset="assets/images/blog/bl-2.webp" />
-                <img src="assets/images/blog/bl-2.jpeg" alt="Выставка VR в Томске" class="article-card__img" />
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/bl-2.webp">
+                <source media="(max-width: 450px)" srcset="assets/images/blog/bl-2.jpeg">
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/bl2-768.webp">
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/bl2-768.jpg">
+                <source type="image/webp" srcset="assets/images/blog/bl-2.webp">
+                <img src="assets/images/blog/bl-2.jpeg" alt="Выставка VR в Томске" class="article-card__img">
               </picture>
             </a>
             <div class="article-card__info">
@@ -264,12 +268,12 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/bl-3.webp" />
-                <source media="(max-width: 450px)" srcset="assets/images/blog/bl-3.jpeg" />
-                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/b3-768.webp" />
-                <source media="(max-width: 1169px)" srcset="assets/images/blog/b3-768.jpg" />
-                <source type="image/webp" srcset="assets/images/blog/bl-3.webp" />
-                <img src="assets/images/blog/bl-3.jpeg" alt="Rocking radio в заброшенном ангаре" class="article-card__img" />
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/bl-3.webp">
+                <source media="(max-width: 450px)" srcset="assets/images/blog/bl-3.jpeg">
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/b3-768.webp">
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/b3-768.jpg">
+                <source type="image/webp" srcset="assets/images/blog/bl-3.webp">
+                <img src="assets/images/blog/bl-3.jpeg" alt="Rocking radio в заброшенном ангаре" class="article-card__img">
               </picture>
             </a>
             <div class="article-card__info">
@@ -308,7 +312,7 @@
                 </svg>
               </div>
               <address class="contacts__info-text">
-                <h6 class="contacts__info-head">Томск, Красноармейская 146</h6>
+                <div class="contacts__info-head">Томск, Красноармейская 146</div>
                 <div class="contacts__info-string">2 этаж</div>
                 <div class="contacts__info-string">оф. 206</div>
               </address>
@@ -320,7 +324,7 @@
                 </svg>
               </div>
               <address class="contacts__info-text">
-                <h6 class="contacts__info-head">Отдел аренды</h6>
+                <div class="contacts__info-head">Отдел аренды</div>
                 <a href="tel:83822907256" class="contacts__info-string">8 (3822) 90-72-56</a>
                 <a href="mailto:idat@tusur.ru" class="contacts__info-string">idat@tusur.ru</a>
               </address>
@@ -332,7 +336,7 @@
                 </svg>
               </div>
               <address class="contacts__info-text">
-                <h6 class="contacts__info-head">Отдел мероприятий</h6>
+                <div class="contacts__info-head">Отдел мероприятий</div>
                 <a href="tel:83822907256" class="contacts__info-string">8 (3822) 90-72-56</a>
                 <a href="mailto:idat@tusur.ru" class="contacts__info-string">idat@tusur.ru</a>
               </address>
@@ -342,12 +346,12 @@
           <div class="contacts__map">
             <picture class="contacts__map-pic">
               <img src="assets/images/contacts/contacts.png" alt="map" class="contacts__map-img">
-              <div class="contacts__map-baloon">
-                <svg class="contacts__info__svg contacts__info__loc-icon" width="18" height="18">
-                  <use xlink:href="assets/icons/symbols.svg#location"></use>
-                </svg>
-              </div>
             </picture>
+            <div class="contacts__map-baloon">
+              <svg class="contacts__info__svg contacts__info__loc-icon" width="18" height="18">
+                <use xlink:href="assets/icons/symbols.svg#location"></use>
+              </svg>
+            </div>
           </div>
 
         </div>
@@ -387,7 +391,7 @@
       </div>
       <div class="page-footer__form">
         <h6 class="page-footer__form-title">Подпишись и будь в курсе происходящего</h6>
-        <form action="" class="page-footer__subscribe display-flex">
+        <form action="#" class="page-footer__subscribe display-flex">
           <label class="field page-footer__field">
             <input class="field__input page-footer__input" type="email" placeholder="Email" name="subsribe_email">
           </label>

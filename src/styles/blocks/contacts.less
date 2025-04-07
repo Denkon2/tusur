@@ -9,9 +9,17 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__title{
+    margin-bottom: 130px;
+    @media @bw1340 {
+      margin-bottom: 100px;
+    }
+  }
   &__info {
     width: 100%;
     max-width: 470px;
+    @media @bw1660{
+    }
     @media @bw1340{
       max-width: 100%;
       display: flex;
@@ -35,6 +43,9 @@
       }
       & ~ .contacts__info-item{
         margin-top: 67px;
+        @media @bw1660{
+          margin-top: 53px;
+        }
         @media @bw1340{
           margin-top: 0;
         }

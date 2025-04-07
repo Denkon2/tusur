@@ -1,4 +1,6 @@
 debug.log
 node_modules
+dist
 .vscode
 old-*
+src/html/test.html

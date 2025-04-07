@@ -10,7 +10,7 @@
   background-color: rgba(222, 222, 222, 0.5);
   z-index: 100;
 
-  @media @bw1340 {
+  @media @bw1660 {
     height: 111px;
   }
   @media @bw768 {
@@ -33,7 +33,7 @@
     height: 147px;
     font-size: 0;
     text-decoration: none;
-    @media @bw1340 {
+    @media @bw1660 {
       width: 152px;
       height: 111px;
     }
@@ -152,6 +152,22 @@
       display: block;
       margin: auto;
     }
+  }
+  &__user{
+    display: flex;
+    align-items: center;
+    text-decoration-color: transparent;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    &:hover{
+      color: @red;
+    }
+  }
+  &__user-auth{
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    color: @red;
+    margin-left: 25px;
   }
   &__nav-toggle {
     display: none;
