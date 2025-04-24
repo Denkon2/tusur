@@ -5,13 +5,13 @@
 
 <body class="body">
 
-    @@include('blocks/page-header-listing.html')
+    @@include('blocks/page-header.html', { "auth": "true" })
 
     <main class="main">
 
-        <div class="page">
-            @@include('blocks/breadcrumbs.html')
+        <div class="container">
             <div class="events">
+                @@include('blocks/breadcrumbs.html', {'class': 'events__breadcrumbs'})
                 <section class="listing events__listing">
                     <h2 class="listing__title section-title width_624">Мероприятия</h2>
                     <div class="listing__events-list">
@@ -26,7 +26,7 @@
                         "img_tablet_webp": "assets/images/events/nirvana-768.webp",
                         "alt": "nirvana",
                         "title": "Собираемся и слушаем альбом Nirvana",
-                        "descr": "Это третий альбом группы...",
+                        "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
                         "time": "07.12.2022 | начало 18.00",
                         "datetime": "2022-12-07T18:00"
                         },
@@ -38,7 +38,7 @@
                         "img_tablet_webp": "assets/images/events/HowStuffWorks-768.webp",
                         "alt": "stuff",
                         "title": "Есть тема, нужно обсудить с HowStuffWorks",
-                        "descr": "Один из самых популярных подкастов в мире...",
+                        "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
                         "time": "14.12.2022 | начало 18.30",
                         "datetime": "2022-12-14T18:30"
                         },
@@ -93,7 +93,7 @@
                         ])
     
                     </div>
-
+    
                         <div class="events__more events__more">
                             @@include('blocks/link-more-icon.html', {"class": "events__more-link link-more-icon--column","text": "Показать еще"})
                         </div>
@@ -118,7 +118,7 @@
                                 <th class="table__body-th">Стоимость за час</th>
                                 <td class="table__td">1 000 ₽</td>
                                 <td class="table__td">3 000 ₽</td>
-                                <td class="table__td">3 000 ₽</td>
+                                <td class="table__td">от 6 000 ₽</td>
                             </tr>
                             <tr class="table__tr">
                                 <th class="table__body-th">Ведущий мероприятия</th>
@@ -200,12 +200,53 @@
                         <tfoot class="table__footer">
                             <tr class="table__footer-tr">
                                 <th class="table__footer-th"></th>
-                                <th class="table__footer-th">Тариф «Light»</th>
-                                <th class="table__footer-th">Тариф «Promo»</th>
-                                <th class="table__footer-th">Тариф «All stars»</th>
+                                <th class="table__footer-th" data-title="Тариф «Light»">Тариф «Light»</th>
+                                <th class="table__footer-th" data-title="Тариф «Promo»">Тариф «Promo»</th>
+                                <th class="table__footer-th" data-title="Тариф «All stars»">Тариф «All stars»</th>
                             </tr>
                         </tfoot>
                     </table>
+
+                    @@include('blocks/want.html', {'class': 'events-want width_624'})
+    
+                    <div class="events__info">
+                        <div class="contacts__info-item display-flex">
+                            <div class="contacts__info-icon">
+                            <svg class="contacts__info__svg contacts__info__loc-icon" width="18" height="18">
+                                <use xlink:href="assets/icons/symbols.svg#location"></use>
+                            </svg>
+                            </div>
+                            <div class="contacts__info-text">
+                            <div class="contacts__info-head">Цены</div>
+                            <div class="contacts__info-string">Цены, указанные на сайте носят информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.</div>
+                            </div>
+                        </div>
+                        <div class="contacts__info-item display-flex">
+                            <div class="contacts__info-icon">
+                            <svg class="contacts__info__svg contacts__info__loc-icon" width="18" height="18">
+                                <use xlink:href="assets/icons/symbols.svg#home"></use>
+                            </svg>
+                            </div>
+                            <div class="contacts__info-text">
+                            <div class="contacts__info-head">Контакты</div>
+                            <div class="contacts__info-string">Отдел организации мероприятий</div>
+                            <a href="tel:83822907256" class="contacts__info-string">8 (3822) 90-72-56</a>
+                            <a href="mailto:idat@tusur.ru" class="contacts__info-string">idat@tusur.ru</a>
+                            </div>
+                        </div>
+                        <div class="contacts__info-item display-flex">
+                            <div class="contacts__info-icon">
+                            <svg class="contacts__info__svg contacts__info__loc-icon" width="18" height="18">
+                                <use xlink:href="assets/icons/symbols.svg#star"></use>
+                            </svg>
+                            </div>
+                            <div class="contacts__info-text">
+                            <div class="contacts__info-head">Преимущество</div>
+                            <div class="contacts__info-string">Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, так и большим корпорациям и холдингам.</div>
+                            </div>
+                        </div>
+                        </div>
+    
                 </div>
             </div>
         </div>

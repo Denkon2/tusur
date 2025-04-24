@@ -3,6 +3,12 @@
   @media @bw1340{
     padding-bottom: 95px;
   }
+  @media @bw880{
+    padding-bottom: 82px;
+  }
+  @media @bw650{
+    padding-bottom: 47px;
+  }
   &__body {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +16,10 @@
     align-items: center;
   }
   &__title{
-    margin-bottom: 130px;
+    margin-bottom: 152px;
+    @media @bw1660 {
+      margin-bottom: 131px;
+    }
     @media @bw1340 {
       margin-bottom: 100px;
     }
@@ -27,8 +36,15 @@
       padding-top: 78px;
       justify-content: space-between;
     }
+    @media @bw880{
+      padding-top: 81px;
+    }
     @media @bw768{
       flex-wrap: wrap;
+    }
+    @media @bw650{
+      padding-top: 42px;
+      font-size: 14px;
     }
     &-item {
       align-items: center;
@@ -52,6 +68,9 @@
         @media @bw768{
           margin-top: 43px;
         }
+        @media @bw650{
+          margin-top: 0;
+        }
       }
     }
     &-icon {
@@ -68,6 +87,9 @@
       @media @bw768{
         width: 65px;
         height: 65px;
+      }
+      @media @bw650{
+        margin-bottom: 44px;
       }
     }
     &-text {
@@ -90,6 +112,12 @@
         display: block;
         text-decoration: none;
         transition: color 0.2s ease;
+        @media @bw880{
+          margin-bottom: 4px;
+        }
+        @media @bw650{
+          margin-bottom: 0px;
+        }
     }
     &-string[href]:hover{
         color: @red;
@@ -103,15 +131,30 @@
           font-size: 18px;
           margin-bottom: 9px;
         }
+        @media @bw650{
+          font-size: 14px;
+          margin-bottom: 9px;
+        }
     }
   }
   &__map {
+    width: 100%;
     max-width: 752px;
     position: relative;
     @media @bw1340{
+      width: 100%;
       max-width: 100%;
       order: -1;
       margin-bottom: 20px;
+    }
+    &-pic{
+      width: 100%;
+      display: block;
+      &::after{
+        content: '';
+        display: block;
+        padding-top: 65.292%;
+      }
     }
     &-baloon{
       position: absolute;
@@ -123,6 +166,14 @@
     &-img{
       display: block;
       margin: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      @media @bw1020{
+        
+      }
     }
   }
 }

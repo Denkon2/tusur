@@ -5,25 +5,25 @@
 
 <body class="body">
 
-    @@include('blocks/page-header.html')
+    @@include('blocks/page-header.html', { "auth": "true" })
 
     <main class="main">
 
         <div class="page">
-            @@include('blocks/breadcrumbs.html')
             <section class="event">
-                <!-- Здесь пропущенное содержимое страницы -->
-                <div class="event__container">
+                <div class="event__container container">
 
-                    <article class="article event__article">
-                        <div class="article__container container">
-                            <h1 class="article__title title">Вечер | The Best of Sade</h1>
+                    @@include('blocks/breadcrumbs.html', {'class': 'event__breadcrumbs'})
+
+                    <article class="article">
+                        <div class="article__container">
+                            <h1 class="event__title">Вечер | The Best of Sade</h1>
                             <div class="event__top">
                                 <div class="event__columns justify-center items-center">
                                     <div class="event__br"></div>
                                     <div class="event__data">
                                         <div class="event__data--left event__data--col">
-                                            <time datetime="16-12-2022" class="event__time">16/12/2022</time>
+                                            <time datetime="2024-12-16T20:00" class="event__time">16/12/2024</time>
                                             <div class="event__addr">Кафе «Птичка»</div>
                                         </div>
                                     </div>
@@ -37,7 +37,7 @@
                                     </picture>
                                     <div class="event__data">
                                         <div class="event__data--right event__data--col">
-                                            <time datetime="20:00" class="event__time">20.00</time> <span
+                                            <time datetime="2024-12-16T20:00" class="event__time">20.00</time> <span
                                                 class="event__time--str">начало</span>
                                             <div class="event__addr">Ленина 10 | 2 этаж</div>
                                         </div>
@@ -56,14 +56,14 @@
                                     <li>22:30 — Живой вокал | Композиции 8-9</li>
                                     <li>23:00 — Завершение вечера</li>
                                 </ul>
-                                <br><br>
+                                <div class="string_br"></div>
                                 <h5>The Best Of Sade</h5>
                                 <p>Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая
                                     самые популярные хиты группы, раритеты и их любимые треки.</p>
 
                                 <p>
                                     Группа продемонстрировала необычайное долголетие и креативность своей творческой
-                                    карьеры.
+                                    карьеры. <br>
                                     Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой
                                     в США и продав более 2 миллионов копий в Европе.
                                 </p>
@@ -80,7 +80,7 @@
                                 </ol>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="containe-form">
                             <form class="reserve reserve-event">
                                 <div class="reserve__checks">
                                     <h4 class="reserve__section-title">Забронировать столик</h4>

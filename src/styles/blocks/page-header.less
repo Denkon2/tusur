@@ -98,6 +98,9 @@
     justify-content: flex-end;
     align-items: center;
     width: 202px;
+    .page-header__nav-user{
+      display: flex;
+    }
     @media @bw1660 {
       width: 152px;
     }
@@ -208,6 +211,12 @@
   }
   &__nav-user {
     display: none;
+    a{
+      transition: color 0.2s;
+    }
+    &:hover a{
+      color: @red;
+    }
 
     @media @bw1020 {
       display: flex;

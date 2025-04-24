@@ -1,63 +1,10 @@
 .listing {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1414px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  @media @bw1660{
-  }
-  @media @bw1340{
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  @media @bw650 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   &__title{
     @media @bw1660 {
-      margin-bottom: 128px;
+      margin-bottom: 129px;
     }
-    @media @bw1340 {
+    @media @bw880 {
       margin-bottom: 100px;
-    }
-  }
-  &__footer {
-    padding-top: 70px;
-    @media @bw1660 {
-      padding-top: 57px;
-      padding-bottom: 23px;
-    }
-    @media @bw1340 {
-      padding-top: 13px;
-      padding-bottom: 13px;
-    }
-  }
-  &__event-card {
-    width: calc(33.3333% - 60px);
-    margin: 0 30px 120px;
-    @media @bw1660 {
-      width: calc(33.3333% - 40px);
-    margin: 0 20px 120px;
-    }
-    @media @bw1340 {
-      width: calc(33.3333% - 30px);
-      margin: 0 15px 100px;
-    }
-    @media @bw1020 {
-      /* width: calc(50% - 30px);
-      max-width: 405px;
-      margin: 0 15px 80px; */
-    }
-    @media @bw768 {
-      margin: 0 10px 80px;
-    }
-    @media @bw650 {
-      width: 100%;
-      margin: 0 0 60px;
     }
   }
   &__events-list {
@@ -65,29 +12,44 @@
     flex-wrap: wrap;
     margin: 0 -30px -120px;
     @media @bw1660 {
-      margin: 0 -20px -100px;
+      margin: 0 -20px -120px;
     }
-    @media @bw1340 {
-      margin: 0 -15px -80px;
-      //overflow: hidden;
-      flex-wrap: nowrap;
+    @media @bw1020 {
+      /* flex-wrap: nowrap; */
+      margin-left: -15px;
+      margin-right: -15px;
     }
-    @media @bw768 {
-      margin: 0 -10px -80px;
+  }
+  &__event-card {
+    width: calc(33.3333% - 60px);
+    margin: 0 30px 120px;
+    @media @bw1660 {
+      width: calc(33.3333% - 40px);
+      margin: 0 20px 92px;
+    }
+    @media @bw1020 {
+      width: calc(50% - 30px);
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 90px;
+      /* width: 280px;
+      margin-left: 0;
+      margin-right: 0; */
     }
     @media @bw650 {
-      margin: 0 0 -60px;
+      margin-bottom: 60px;
     }
   }
-}
-.home__listing {
-  padding-top: 65px;
-  padding-bottom: 76px;
-  @media @bw1660 {
-    padding-bottom: 66px;
+  &__footer-link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
   }
-  @media @bw1340 {
-    padding-top: 33px;
-    padding-bottom: 44px;
+  &__footer{
+    /* @media @bw1660 {
+      padding-top: 58px;
+    } */
   }
 }

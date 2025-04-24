@@ -1,5 +1,6 @@
 .page-footer {
   font-weight: 600;
+  flex: 0 0 auto;
   & a {
     text-decoration: none;
     transition: color 0.2s;
@@ -44,6 +45,9 @@
       @media @bw1340 {
         max-width: 44%;
       }
+      @media @bw1660{
+        max-width: 582px;
+      }
       @media @bw1020 {
         max-width: 43%;
       }
@@ -80,6 +84,15 @@
     margin-left: auto;
     margin-right: 0;
     max-width: 410px;
+    @media @bw320 {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+  &__subscribe{
+    @media @bw320 {
+      width: 100%;
+    }
   }
   &__form-title {
     font-size: 16px;
@@ -89,20 +102,43 @@
     @media @bw1340 {
       margin-bottom: 23px;
     }
+    @media @bw650 {
+      font-size: 13px;
+      font-weight: 400;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+  }
+  &__check{
+    @media @bw320 {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 12px;
+      
+    }
   }
   .field__input {
     height: 49px;
     border-radius: 0;
     padding-left: 27px;
+    @media @bw650 {
+      height: 46px;
+    }
   }
   &__btn {
     font-size: 14px;
     font-weight: 400;
     padding-left: 23px;
     padding-right: 23px;
+    @media @bw650 {
+      font-size: 12px;
+    }
   }
   &__field {
     width: calc(100% - 134.5px);
+    @media @bw320 {
+      width: calc(100% - 121.5px);
+    }
   }
   &__check {
     margin-top: 14px;
@@ -110,6 +146,10 @@
   }
   &__copyright {
     grid-area: copyright;
+    @media @bw650 {
+      display: flex;
+      flex-direction:column-reverse;
+    }
   }
   &__socials {
     grid-area: social;
@@ -125,6 +165,12 @@
     border-left: 4px solid rgb(188, 51, 36);
     margin: 0 0 60px 0;
     list-style: none;
+    @media @bw1660 {
+      margin-bottom: 57px;
+    }
+    @media @bw650 {
+      margin-bottom: 69px;
+    }
     &-item {
     }
     &-item ~ &-item {
@@ -165,15 +211,26 @@
     @media @bw1340 {
       font-size: 14px;
     }
+    @media @bw650 {
+      text-align: right;
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
   }
   &__link {
     @media @bw1340 {
       font-size: 14px;
     }
+    @media @bw650 {
+      margin-bottom: 13px;
+    }
     &:nth-child(2) {
       margin-left: 60px;
       @media @bw1340 {
         margin-left: 10px;
+      }
+      @media @bw650 {
+        margin-left: 0px;
       }
     }
   }
@@ -181,6 +238,10 @@
 .socials {
   @media @bw1340 {
     margin-bottom: 57px;
+  }
+  @media @bw650 {
+    margin-top: 64px;
+    margin-bottom: 51px;
   }
   &__btn {
     transition: background 0.2s ease;
@@ -195,6 +256,12 @@
     background: #1f1e1e;
     &:hover {
       background: @red_dark;
+    }
+    @media @bw650 {
+      width: 48px;
+      height: 48px;
+      margin-left: 16px;
+      margin-right: 16px;
     }
   }
 }

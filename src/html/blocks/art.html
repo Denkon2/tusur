@@ -1,4 +1,4 @@
-<section class="art justify-center">
+<section class="art @@class">
     <h1 class="art__title">Арт — пространство</h1>
     <div class="art__banner">
         <!-- <svg class="art__banner-icon" width="202" height="147">
@@ -7,9 +7,5 @@
         <img class="art__banner-icon" src="assets/images/LENNI.svg" alt="art">
     </div>
     <h6 class="art__subtitle">для людей, горящих сердцЕМ и делом место для настоящего</h6>
-    <div class="art__btns width_624">
-        <div class="art__btns-title text-align-center w-100">Я хочу:</div>
-        <button class="btn art__btn btn--red" data-pp="eventPP">Провести мероприятие</button>
-        <a href="#" class="btn art__btn">Стать арендатором</a>
-    </div>
+    @@include('want.html', {'class': 'home-want width_624'})
 </section>

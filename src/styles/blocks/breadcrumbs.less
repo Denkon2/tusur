@@ -5,9 +5,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 21.79px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media @bw768{
+      display: none;
+    }
 
     &__container{
-
     }
     &__link{
         color: #1F1E1E;
@@ -16,5 +20,10 @@
         &:hover{
             color: @red;
         }
+    }
+    &__separator{
+        display: inline-flex;
+        padding-left: 3px;
+        padding-right: 0;
     }
 }

@@ -39,3 +39,8 @@ if(btnClose) btnClose.addEventListener('click', closeModal)
 if(btnMobileMenu) btnMobileMenu.addEventListener('click', function(){
     btnToggleMenu('.page-header__nav')
 })
+
+
+if(window.location.pathname == '/events.html'){
+    document.body.classList.add('user-auth-true')
+}

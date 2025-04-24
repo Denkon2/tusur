@@ -1,0 +1,30 @@
+.user-panel {
+    display: flex;
+    align-items: center;
+    &__link, &__logount{
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    &__link:hover, &__logount:hover{
+        color: @red;
+    }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: inline-flex;
+    margin-right: 25px;
+  }
+  &__logount{
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+  }
+  &__svg{
+    width: 100%;
+    height: 100%;
+  }
+}
+.user-panel-mobile{
+    
+}

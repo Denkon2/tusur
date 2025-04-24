@@ -1,24 +1,24 @@
-<section class="about">
-        <h2 class="about__title section-title width_624">О нас</h2>
-    <article class="about__article">
-        <div class="about__body">
-            <div class="about__desctiption display-flex">
-                <h6 class="about__desctiption--title">Проект «Millennials»</h6>
-                <p class="about__desctiption--text">
+<section class="about @@class">
+    <h2 class="about__title section-title width_624">О нас</h2>
+    <div class="container">
+        <article class="about__content">
+            <div class="about__desctiption about__desctiption-1 display-flex">
+                <h3 class="about__desctiption-title">Проект «Millennials»</h3>
+                <p class="about__desctiption-text">
                     Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать мир лучше,
                     проявить себя. У них есть талант и стремление, у нас возможность помочь им воплотить их мечту в
                     реальность.
                 </p>
             </div>
-            <div class="about__desctiption about__desctiption-grid display-grid">
+            <div class="about__desctiption about__desctiption-2 display-grid">
                 <picture class="about__image about__image-1">
                     <source media="(max-width: 649px)" srcset="assets/images/about/pic-768.png">
                     <source media="(max-width: 649px)" type="image/webp" srcset="assets/images/about/pic-768.webp">
                     <source type="image/webp" srcset="assets/images/about/pic.webp">
                     <img src="assets/images/about/pic.png" class="about__img" alt="img">
                 </picture>
-                <h6 class="about__desctiption--title">Мы предоставляем площади для вашего мероприятия</h6>
-                <p class="about__desctiption--text">
+                <h3 class="about__desctiption-title">Мы предоставляем площади для вашего мероприятия</h3>
+                <p class="about__desctiption-text">
                     И оказываем помощь с организацией, если вам это нужно. <br>
                     Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать
                     первые шаги к своей мечте и рассказать всем о том, что их волнует.
@@ -27,24 +27,20 @@
                     <img src="assets/images/about/pic2.png" class="about__img" alt="img">
                 </picture>
             </div>
-            <div class="about__desctiption display-flex">
-                <div class="about__image"><img src="assets/images/about/pic3.png" class="about__img" alt="img">
-                </div>
-                <div class="about__desctiption--text display-flex">
+            <div class="about__desctiption about__desctiption-3 display-flex">
+                <picture class="about__image about__image-3">
+                    <source type="image/webp" srcset="assets/images/about/pic.webp">
+                    <img src="assets/images/about/pic3.png" class="about__img" alt="img">
+                </picture>
+                <div class="about__desctiption-text display-flex">
                     <p>Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.</p>
                     @@include('link-more-icon.html', {
                     "class": "about__desctiption-link display-flex w-100",
                     "svg_class": "about__desctiption-icon",
                     "text": "Смотртеть"
                     })
-                    <!-- <a href="#" class="about__desctiption-link display-flex w-100">
-                        Смотртеть
-                        <svg class="about__desctiption-icon" width="91" height="60">
-                            <use xlink:href="assets/icons/symbols.svg#link"></use>
-                        </svg>
-                    </a> -->
                 </div>
-            </div>
-        </div>
-    </article>
+            </div>            
+        </article>
+    </div>
 </section>

@@ -3,9 +3,9 @@
         position: relative;
         display: inline-flex;
         align-items: center;
-        min-width: 192px;
-        margin-bottom: 13px;
+        margin-bottom: 20px;
         justify-content: end;
+        padding-left: 63px;
         &::before,
         &::after{
             content: "";
@@ -13,10 +13,11 @@
             width: 24px;
             height: 24px;
             border-radius: 50%;
+            position: absolute;
         }
         &::before{
             border: 1px solid @black;
-            margin-right: 33px;
+            left: 0;
         }
         &::after{
             border: 1px solid @red;
@@ -25,12 +26,13 @@
         }
     }
     &__place--disable{
-        &::before{
+        &::after{
             opacity: 0;
         }
-        &::after{
+        &::before{
             border-color: #BFBFBF;
             background: #BFBFBF;
+            left: 6px;
         }
     }
 }

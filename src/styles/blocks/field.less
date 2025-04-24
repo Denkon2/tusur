@@ -12,6 +12,9 @@
     background-color: @white;
     font-size: 16px;
     line-height: 1.375;
+    @media @bw650 {
+      font-size: 12px;
+    }
   }
   &__input {
     height: 55px;
@@ -28,6 +31,9 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
+    @media @bw768 {
+      font-size: 16px;
+    }
   }
   &__label {
     display: block;
@@ -165,6 +171,9 @@
     width: 24px;
     height: 24px;
     border: 1px solid @black;
+    @media @bw320 {
+      top: 4px;
+    }
   }
   &__label {
     margin-left: 15px;
@@ -174,6 +183,10 @@
     &--s {
       font-size: 14px;
       line-height: 19px;
+      @media @bw320 {
+        font-size: 12px;
+        line-height: 1.1;
+      }
     }
   }
   &--red {

@@ -23,7 +23,10 @@
     text-decoration: none;
     overflow: hidden;
     @media @bw1340{
-      margin-bottom: 21px;
+      margin-bottom: 16px;
+    }
+    @media @bw650 {
+      margin-bottom: 26px;
     }
     
     &::after {
@@ -35,7 +38,7 @@
         padding-top: 110.16%;
       }
       @media @bw1340{
-        padding-top: 108.16%;
+        padding-top: 107.16%;
       }
     }
   }
@@ -60,15 +63,15 @@
     @media @bw1660 {
       margin: 0 0 4px;
     }
-    @media @bw1340 {
-      min-height: 54px;
-      font-size: 16px;
+    @media @bw1020 {
+      min-height: 61px;
+      font-size: 20px;
       line-height: 1.3;
     }
     @media @bw768 {
-      min-height: 44px;
+      min-height: 49px;
       font-size: 16px;
-      line-height: 22px;
+      line-height: 1.3;
     }
   }
   &__description {
@@ -76,8 +79,13 @@
     font-size: 16px;
     line-height: 22px;
     @media @bw1020 {
+      line-height: 1.3;
+      min-height: 96px;
+    }
+    @media @bw650 {
+      margin-top: 8px;
       font-size: 14px;
-      line-height: 19px;
+      min-height: 80px;
     }
   }
   &__time {

@@ -17,6 +17,9 @@
   }
   &__column--50 {
     width: calc(50% - 30px);
+    @media @bw768 {
+      width: 100%;
+    }
   }
   &__column--100 {
     width: 100%;
@@ -37,5 +40,9 @@
     transition: color 0.2s;
     padding: 4px 0;
     border: none;
+    @media @bw768 {
+      margin-top: 20px;
+      font-size: 14px;
+    }
   }
 }
