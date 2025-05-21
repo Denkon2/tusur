@@ -177,13 +177,14 @@
     }
     &-item {
     }
-    &-item ~ &-item {
+    &-link ~ &-link {
       margin-top: 22px;
     }
   }
   &__list-link {
     text-decoration: none;
     transition: color 0.2s;
+    display: flex;
     &:hover {
       color: @red;
     }
