@@ -108,11 +108,13 @@
     }
     .about__desctiption-text {
       grid-area: description;
-      margin-top: 50px;
-      margin-bottom: 50px;
+      margin-top: 87px;
+      margin-bottom: 15px;
+      margin-right: 79px;
       @media @bw1660 {
         margin-top: 93px;
         margin-bottom: 27px;
+        margin-right: 0;
       }
       
       @media @bw1340 {
@@ -162,8 +164,13 @@
     }
     .about__desctiption-link{
         margin-top: auto;
+        margin-bottom: 60px;
+        height: 0;
         align-items: center;
         justify-content: space-between;
+        @media @bw1340 {
+          margin-bottom: 40px;
+        }
         @media @bw1020 {
           max-width: 262px;
           margin-left: auto;

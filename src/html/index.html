@@ -14,7 +14,7 @@
 
       @@include('blocks/about.html', {'class': 'home__about'})
 
-      @@include('blocks/events-listing.html', {'class': 'home__listing events-home', 'title-class': 'home__listing-title'})
+      @@include('blocks/upcoming.html', {'class': 'home__listing events-home', 'title-class': 'home__listing-title'})
 
       @@include('blocks/blog-listing.html', {"class": "home__blog-listing"})
 
@@ -29,7 +29,17 @@
   @@include('blocks/page-footer.html')
 
   @@include('blocks/event-pp.html')
-<script defer src="scripts/main.js"></script>
+
+<script src="scripts/jquery-3.7.1.js"></script>
+<script src="scripts/swiper.min.js"></script>
+<script src="scripts/jquery.selectric.min.js"></script>
+<script src="scripts/jquery.mask.min.js"></script>
+<script src="scripts/toastr.min.js"></script>
+<script src="scripts/jquery.validate.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZUNlhU9vQvHGtU4WbkJM5hJBLCHCRlAM"></script>
+<script src="scripts/jquery.validate-init.js"></script>
+<script src="scripts/air-datepicker.js"></script>
+<script src="scripts/main.min.js"></script>
 </body>
 
 </html>

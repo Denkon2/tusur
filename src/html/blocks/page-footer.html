@@ -21,14 +21,14 @@
         </div>
         <div class="page-footer__form">
             <h6 class="page-footer__form-title">Подпишись и будь в курсе происходящего</h6>
-            <form action="#" class="page-footer__subscribe display-flex">
+            <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__subscribe display-flex" id="js-subscribeForm">
                 <label class="field page-footer__field">
-                    <input class="field__input page-footer__input" type="email" placeholder="Email"
-                        name="subsribe_email">
+                    <input id="js-subscribeEmail" class="field__input page-footer__input" type="email" placeholder="Email"
+                        name="subsribe_email" required>
                 </label>
                 <button type="submit" class="btn btn--black page-footer__btn">Подписаться</button>
                 <label class="check page-footer__check w-100">
-                    <input type="checkbox" name="agree" class="check__input" required checked />
+                    <input type="checkbox" name="agree" class="check__input" required checked>
                     <span class="check__mark"></span>
                     <span class="check__label check__label--s">Согласен на обработку персональных данных</span>
                 </label>

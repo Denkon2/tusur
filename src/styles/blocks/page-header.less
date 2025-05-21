@@ -36,6 +36,8 @@
     @media @bw1660 {
       width: 152px;
       height: 111px;
+      position: relative;
+      z-index: 20;
     }
     @media @bw768 {
       height: 70px;
@@ -104,6 +106,8 @@
     }
     @media @bw1660 {
       width: 152px;
+      position: relative;
+      z-index: 20;
     }
     @media @bw1020 {
       width: auto;
@@ -201,6 +205,7 @@
       border-radius: 2px;
       background-color: @black;
       transform-origin: 50% 50%;
+      transition: transform 0.4s, box-shadow 0.4s;
     }
     &::before {
       top: 13px;

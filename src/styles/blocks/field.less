@@ -56,9 +56,14 @@
   }
   &__data{
     display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 251px;
     height: 55px;
+    position: relative;
+    & span.error{
+      padding-top: 30px;
+    }
     &-input{
       box-sizing: border-box;
       display: block;
@@ -78,6 +83,38 @@
       margin-right: 0;
     }
   }
+  &__date-inputs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    pointer-events: none;
+  }
+  &__date-picker {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer; 
+  }
+  
+  label.error,
+  span.error {
+    display: block;
+    margin: 5px 0 0;
+    color: @red;
+    font-size: 14px;
+  }
+}
+
+#air-datepicker-global-container{
+  z-index: 999999;
 }
 
 .radio {
@@ -205,6 +242,13 @@
   &--disabled {
     pointer-events: none;
     opacity: 0.5;
+  }
+  & span.error{
+    order: 3;
+    display: inline-block;
+    padding-left: 15px;
+    color: @red;
+    font-size: 14px;
   }
 }
 .reserve__check{
