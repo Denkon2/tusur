@@ -84,6 +84,10 @@
     margin-left: auto;
     margin-right: 0;
     max-width: 410px;
+    @media @bw768 {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
     @media @bw320 {
       margin-left: -20px;
       margin-right: -20px;
@@ -150,9 +154,9 @@
   }
   &__copyright {
     grid-area: copyright;
-    @media @bw650 {
+    @media @bw768 {
       display: flex;
-      flex-direction:column-reverse;
+      flex-direction: column;
     }
   }
   &__socials {
@@ -169,13 +173,13 @@
     border-left: 4px solid rgb(188, 51, 36);
     margin: 0 0 60px 0;
     list-style: none;
+    display: inline-flex;
+    flex-direction: column;
     @media @bw1660 {
       margin-bottom: 57px;
     }
     @media @bw650 {
       margin-bottom: 69px;
-    }
-    &-item {
     }
     &-link ~ &-link {
       margin-top: 22px;
@@ -184,7 +188,7 @@
   &__list-link {
     text-decoration: none;
     transition: color 0.2s;
-    display: flex;
+    display: inline-flex;
     &:hover {
       color: @red;
     }
@@ -216,12 +220,17 @@
     @media @bw1340 {
       font-size: 14px;
     }
-    @media @bw650 {
+    @media @bw768 {
+      order: 3;
+      margin-top: 30px;
       text-align: right;
-      margin-top: 7px;
-      margin-bottom: 10px;
     }
   }
+    @media @bw768 {
+      &__links{
+        flex-direction: column;
+      }
+    }
   &__link {
     @media @bw1340 {
       font-size: 14px;
@@ -234,6 +243,10 @@
       @media @bw1340 {
         margin-left: 10px;
       }
+      @media @bw768 {
+        margin-left: 0;
+        margin-top: 5px;
+      }
       @media @bw650 {
         margin-left: 0px;
       }
@@ -243,10 +256,6 @@
 .socials {
   @media @bw1340 {
     margin-bottom: 57px;
-  }
-  @media @bw650 {
-    margin-top: 64px;
-    margin-bottom: 51px;
   }
   &__btn {
     transition: background 0.2s ease;
